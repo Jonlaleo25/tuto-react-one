@@ -1,28 +1,35 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React  from  'react'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+class App extends React.Component{
+  render(){
+    
+   let txt = this.props.txt;
+
+    return <h1>{ txt }</h1>
   }
 }
 
-export default App;
+// class App extends Component{
+//   render(){
+//     return React.createElement('h1', null,'HEY JON')
+//   }
+// }
+
+// class App extends Component{
+//   render (){
+//     return(
+//       <div>
+//         <h3>
+          
+//            HELLO JONはうまくいきます...ちょうど彼らは彼らの材料で抑えられているので、
+//         </h3>
+
+//       </div>
+//     )
+//   }
+// }
+
+
+// const App = () => <h1>HEY JON</h1>
+
+export default App
